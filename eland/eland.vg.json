@@ -1,0 +1,15 @@
+{
+    "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+    "data": {
+      "url": "http://127.0.0.1:9200/farequote_eland_2/_search?size=1000",
+      "format": {"property": "hits.hits", "type": "json"}
+    },
+    "mark": {"type": "point", "filled": true, "opacity": 0.5, "size": 10},
+    "encoding": {
+      "x": {"type": "temporal", "field": "_source.time"},
+      "y": {"type": "quantitative", "field": "_source.responsetime"}
+    },
+    "height": 300,
+    "width": 800,
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.0.2.json"
+  }
